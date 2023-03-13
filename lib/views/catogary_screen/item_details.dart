@@ -50,7 +50,7 @@ class ItemDetails extends StatelessWidget {
                   //Rating=====================================================
                   10.heightBox,
                   VxRating(onRatingUpdate: (Value){},normalColor: textfieldGrey, selectionColor: golden,maxRating: 5,size: 25,stepInt: true,),
-
+//dfsdfsdfsfs
                 ],
               ),
           ),
