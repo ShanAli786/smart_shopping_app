@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:emart_app/consts/consts.dart';
+import 'package:emart_app/views/catogary_screen/item_details.dart';
 import 'package:flutter/foundation.dart';
 
 const slidersList = [imgSlider1, imgSlider2, imgSlider3, imgSlider4];
@@ -19,3 +20,5 @@ const featuredTitle2 = [denimjacks, denimjeans, tshirts];
 const categoriesList = [menClothing,womenClothing, kidsClothing];
 const categoryImages = [imgFc2, imgFc1, imgFc3];
 
+// ignore: constant_identifier_names
+const ItemDetailsButtonsList = [video,Reviews, sellerpolicy,returnpolicy,suportpolicy];

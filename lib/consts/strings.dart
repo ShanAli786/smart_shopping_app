@@ -25,3 +25,12 @@ const denimjacks = "denim jackets";
 const womenClothing = "Women Clothes & Feshion",
       menClothing = "Men's Clothes & Feshion",
       kidsClothing = "Kids Clothes & Feshion";
+
+
+      //items detials strigs
+
+      const video = "Video",
+            Reviews = "Reviews",
+            sellerpolicy = "sellerpolicy",
+            returnpolicy = "returnpolicy",
+            suportpolicy = "Support Policy";
