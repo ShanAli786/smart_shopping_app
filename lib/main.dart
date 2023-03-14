@@ -2,12 +2,15 @@
 
 //import 'package:emart_app/HomeSCreen/home_screen.dart';
 import 'package:emart_app/views/splashscreen/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'consts/consts.dart';
 //import 'views/splashscreen/splash_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -19,7 +22,6 @@ class MyApp extends StatelessWidget {
     //we are usig get x that why we will convert material app into getmaterial app
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      
       title: appname,
       theme: ThemeData(
         iconTheme: IconThemeData(color: Colors.black),
