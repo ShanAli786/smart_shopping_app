@@ -14,25 +14,37 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      
       color:const Color.fromARGB(255, 230, 206, 206),
       child: Scaffold(
+        
         body: SafeArea(
             child: Container(
+              
           padding: const EdgeInsets.only(top: (30)),
           child: Column(
+           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              //Edit Profile Button
-              const Align( 
-                          alignment: Alignment.topRight,
-                          child: Icon(Icons.edit),
-                           ).onTap(() {}),
+              //================================Edit Profile Button
 
+          //20.heightBox,
+                    Align(
+                      
+                      alignment: Alignment.center,
+                      child: profile.text
+                          .color(darkFontGrey)
+                          .size(25)
+                          .fontFamily(semibold)
+                          .make(),
+                    ),
+      
+              20.heightBox,
               //User Details Section
               Row(
                 children: [
                   Image.asset(
                     imgProfile2,
-                    width: 100,
+                    width: 120,
                     fit: BoxFit.cover,
                   ).box.roundedFull.clip(Clip.antiAlias).make(),
                   10.widthBox,
@@ -40,22 +52,27 @@ class ProfileScreen extends StatelessWidget {
                       child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      "Dummy User".text.fontFamily(semibold).black.make(),
+                      "jasmeen".text.fontFamily(semibold).black.make(),
                       "customer@example.com"
                           .text
                           .fontFamily(semibold)
                           .black
                           .make(),
+                          const Align( 
+                          alignment: Alignment.topRight,
+                          child: Icon(Icons.edit_note),
+                           ).onTap(() {}).box.margin(const EdgeInsets.symmetric(horizontal: 10)).make(),
+
                           
                     
                     ],
                   )),
-                  OutlinedButton(
-                      style: OutlinedButton.styleFrom(
-                        side: const BorderSide(color: Colors.black),
-                      ),
-                      onPressed: (() {}),
-                      child: "Logout".text.fontFamily(semibold).black.make()),
+                  // OutlinedButton(
+                  //     style: OutlinedButton.styleFrom(
+                  //       side: const BorderSide(color: Colors.black),
+                  //     ),
+                  //     onPressed: (() {}),
+                  //     child: "Logout".text.fontFamily(semibold).black.make()),
                  
                 ],
               ),
@@ -66,12 +83,12 @@ class ProfileScreen extends StatelessWidget {
                   detailsCard(
                       count: "0",
                       title: "In your Cart",
-                      width: context.screenWidth / 3.2),
+                      width: context.screenWidth / 1.1),
                  
                 ],
               ),
               //Buttons section
-
+            
               40.heightBox,
               ListView.separated(
                 shrinkWrap: true,
@@ -101,14 +118,26 @@ class ProfileScreen extends StatelessWidget {
                   .padding(const EdgeInsets.symmetric(horizontal: 16))
                   .shadowSm
                   .make(),
+                  FloatingActionButton.extended(
+  label: const Text('Logout'), // <-- Text
+  backgroundColor: const Color.fromARGB(255, 40, 35, 15),
+  icon: const Icon( // <-- Icon
+    Icons.logout_outlined,
+    size: 24.0,
+  ),
+  onPressed: () {},
+).box.margin(const EdgeInsets.symmetric(vertical: 80)).make(),
             ],
             
           ),
          
-        )),
+        )
+        
+        ),
+        
         
       ),
-    
+      
     );
     
   }

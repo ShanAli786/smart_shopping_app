@@ -13,7 +13,8 @@ const searchanything = "Search what you want",
     featuredcategories = "Featured Categories";
     const Allproducts = "All Products";
 
-const featuredproducts = "Featured Products";
+const featuredproducts = "Featured Products",
+      profile = "Profile";
 
 const womendress = "Women Dresses";
 const Mendress = "Men's Dressing";

@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_import, non_constant_identifier_names, unused_import, avoid_types_as_parameter_names, unnecessary_string_escapes
+// ignore_for_file: unnecessary_import, non_constant_identifier_names, unused_import, avoid_types_as_parameter_names, unnecessary_string_escapes, prefer_const_constructors, duplicate_ignore, prefer_const_literals_to_create_immutables
 
 import 'package:emart_app/consts/colors.dart';
 import 'package:emart_app/consts/list.dart';
@@ -9,6 +9,7 @@ import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import '../../consts/consts.dart';
+import '../../widgets_common/home_buttons.dart';
 //import '../../consts/styles.dart';
 //import 'package:flutter/src/widgets/container.dart';
 //import 'package:flutter/src/widgets/framework.dart';
@@ -19,6 +20,7 @@ class ItemDetails extends StatelessWidget {
 
 
   @override
+  // ignore: duplicate_ignore
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return Scaffold(
@@ -162,12 +164,47 @@ class ItemDetails extends StatelessWidget {
               ),
             
           ).box.shadowSm.white.padding(const EdgeInsets.all(12)).make(),
-
+          10.heightBox,
+//*********************************Add to cart button**************************************************************************
+   
+//    ElevatedButton.icon(
+//   onPressed: () {},
+//   icon: Icon( // <-- Icon
+//     Icons.shopping_cart_checkout,
+//     size: 24.0,
+//   ),
+//   label: Text('Download'), // <-- Text
+// ).box.shadowSm.white.padding(const EdgeInsets.all(22)).make(),
+            SizedBox.fromSize(
+  size: Size(150, 50),
+    
+    child: Material(
+      color: Color.fromRGBO(210, 228, 6, 1),
+      child: InkWell(
+        splashColor: Colors.green, 
+        onTap: () {}, 
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Icon(Icons.shopping_cart), // <-- Icon
+            Text("Add to cart"), // <-- Text
           ],
+        ),
+      ),
+    ),
+  ).box.rounded.padding(const EdgeInsets.symmetric(horizontal: 14)).make(),
+    
+   ],
+          
         ),
           )
           ),
-      )],
+      ),
+      const SizedBox(
+        
+      ),
+      
+      ],
       ),
 
 

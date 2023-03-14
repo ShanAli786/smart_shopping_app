@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
 // Mthod for navigation to other pages
 
   changeScreen() {
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 2), () {
       //usingGetX
       //var Get;
       Get.to(() => const Home());
@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: redColor,
+      //backgroundColor: redColor,
       body: Center(
         child: Column(
           children: [
