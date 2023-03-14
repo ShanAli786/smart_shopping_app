@@ -22,3 +22,7 @@ const categoryImages = [imgFc2, imgFc1, imgFc3];
 
 // ignore: constant_identifier_names
 const ItemDetailsButtonsList = [video,Reviews, sellerpolicy,returnpolicy,suportpolicy];
+
+//Profile lists
+const profileButtonsList = [orders, contact, address];
+const profileButtonsIcons = [icOrder, icOrders, icMessages];

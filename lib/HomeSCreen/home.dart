@@ -49,8 +49,9 @@ class Home extends StatelessWidget {
     var navBody = [
       const HomeScreen(),
       const CategoryScreen(),
-      const ProfileScreen(),
       const CartScreen(),
+      const ProfileScreen(),
+      
 
     ];
     
@@ -76,3 +77,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+//comment

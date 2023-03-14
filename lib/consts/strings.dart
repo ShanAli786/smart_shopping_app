@@ -34,3 +34,5 @@ const womenClothing = "Women Clothes & Feshion",
             sellerpolicy = "sellerpolicy",
             returnpolicy = "returnpolicy",
             suportpolicy = "Support Policy";
+// Profile strings
+const orders = "My Orders", address = "Address", contact = "Phone Number";
