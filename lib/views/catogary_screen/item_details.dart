@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_import, non_constant_identifier_names, unused_import, avoid_types_as_parameter_names, unnecessary_string_escapes, prefer_const_constructors, duplicate_ignore, prefer_const_literals_to_create_immutables
+// ignore_for_file: unnecessary_import, non_constant_identifier_names, unused_import, avoid_types_as_parameter_names, unnecessary_string_escapes, prefer_const_constructors, duplicate_ignore, prefer_const_literals_to_create_immutables, depend_on_referenced_packages
 
 import 'package:emart_app/consts/colors.dart';
 import 'package:emart_app/consts/list.dart';

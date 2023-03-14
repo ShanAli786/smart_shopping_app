@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, non_constant_identifier_names
+// ignore_for_file: prefer_const_constructors, non_constant_identifier_names, depend_on_referenced_packages
 
 //import 'package:emart_app/HomeSCreen/home_screen.dart';
 import 'package:emart_app/views/splashscreen/splash_screen.dart';

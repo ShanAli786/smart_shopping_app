@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_import, implementation_imports, unused_local_variable, non_constant_identifier_names, avoid_types_as_parameter_names, unused_import
+// ignore_for_file: unnecessary_import, implementation_imports, unused_local_variable, non_constant_identifier_names, avoid_types_as_parameter_names, unused_import, depend_on_referenced_packages
 
 import 'package:emart_app/HomeSCreen/home_screen.dart';
 import 'package:emart_app/consts/consts.dart';

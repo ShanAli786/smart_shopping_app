@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import
+// ignore_for_file: unused_import, depend_on_referenced_packages
 
 import 'package:emart_app/consts/consts.dart';
 import 'package:emart_app/views/catogary_screen/item_details.dart';

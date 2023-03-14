@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_import, non_constant_identifier_names, unused_import, prefer_typing_uninitialized_variables
+// ignore_for_file: unnecessary_import, non_constant_identifier_names, unused_import, prefer_typing_uninitialized_variables, depend_on_referenced_packages
 
 import 'package:emart_app/HomeSCreen/home.dart';
 import 'package:emart_app/consts/colors.dart';

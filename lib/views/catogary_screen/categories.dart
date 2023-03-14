@@ -1,4 +1,4 @@
-// ignore_for_file: implementation_imports, camel_case_types, avoid_unnecessary_containers
+// ignore_for_file: implementation_imports, camel_case_types, avoid_unnecessary_containers, depend_on_referenced_packages
 
 //import 'package:emart_app/consts/consts.dart';
 //import 'package:flutter/material.dart';

@@ -1,5 +1,5 @@
 // ignore: duplicate_ignore
-// ignore_for_file: unused_import, duplicate_ignore
+// ignore_for_file: unused_import, duplicate_ignore, depend_on_referenced_packages
 
 import 'package:emart_app/consts/list.dart';
 import 'package:emart_app/views/catogary_screen/item_details.dart';
