@@ -18,6 +18,25 @@ class HomeScreen extends StatelessWidget {
 
     //=================================================================================================================================
     
+       Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 179, 234, 238),
+         //Color.fromARGB(255, 238, 236, 231),
+        title: const Text("Smart Shopping", style: TextStyle(color: Colors.black,)),
+        iconTheme: const IconThemeData(color: Colors.black),
+        //leading: Image.asset("your_image_asset"),
+        actions: <Widget>[
+          IconButton(icon: const Icon(Icons.search, color: Colors.black,), onPressed: () {}),
+    IconButton(icon: const Icon(Icons.mic, color: Colors.black,), onPressed: () {}),
+           IconButton(icon: const Icon(Icons.camera_alt_outlined, color: Colors.black,), onPressed: () {}),
+    
+         ],
+        
+    
+    
+      ),
+    );
+    
     return Container(
         color: lightGrey,
         width: context.screenWidth,
@@ -40,6 +59,7 @@ class HomeScreen extends StatelessWidget {
             //     ),
             //   ),
             // ),
+            
           
             10.heightBox,
             Expanded(
